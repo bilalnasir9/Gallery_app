@@ -19,10 +19,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewTEST = findViewById(R.id.recyclerTEST);
         recyclerViewTEST.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerViewTEST.setHasFixedSize(true);
-        recyclerViewTEST.setItemViewCacheSize(20);
-        recyclerViewTEST.setDrawingCacheEnabled(true);
-        recyclerViewTEST.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-        recyclerViewTEST.setNestedScrollingEnabled(false);
         adapter_class objadapter = new adapter_class(this, imagearray);
         recyclerViewTEST.setAdapter(objadapter);
     }
